@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stress Test</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Stress Test</h2>
+      </div>
+      <form id="stress-quiz">
+        <div class="form-group">
+          <h3>Are you stressed out?</h3>
+          <p>Choose all that apply</p>
+          <input type="checkbox" name="stress-test" value="1"> Low energy<br>
+          <input type="checkbox" name="stress-test" value="1"> Headaches<br>
+          <input type="checkbox" name="stress-test" value="1"> Unable to focus<br>
+          <input type="checkbox" name="stress-test" value="1"> Poor judgement<br>
+          <input type="checkbox" name="stress-test" value="1"> Constantly worring about things<br>
+          <input type="checkbox" name="stress-test" value="1"> Hard time falling asleep<br>
+        </div>
+       <button type="submit">Submit Test</button>
+      </form>
+      <span id="stress-levels">
+        <p>Your stress level is: <b><span id="results"></span></b></p>
+      </span>
+    </div>
+  </body>
+</html>
