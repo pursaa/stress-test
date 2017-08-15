@@ -4,12 +4,17 @@ $(document).ready(function(){
       var total = 0;
     $("input:checkbox[name=stress-test]:checked").each(function(){
       var $this=$(this).val();
-       total = total + 1;
+       total = total + Number($this);
+       console.log(total);
     });
-    if (total >= 4){
+    if (total >= 15){
       $("#results").text("You are stressed out!!!");
-      $("#stress-levels").show();
+    }else if (total > 8 && total < 15 ){
+    $("#results").text("You somewhat stressed out!!!");
+  }else{
+    $("#results").text("You are not stressed out!!!")
+  }
+    $("#stress-levels").show();
 
-    }
   });
 });
